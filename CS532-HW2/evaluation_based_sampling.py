@@ -35,6 +35,8 @@ def EVAL(e, sigma, l, rho):
     if type(e) != list or len(e) == 1:
         if type(e) == list:
             e = e[0]
+            if e == 'vector': # ugly sigh
+                return torch.tensor([]), sigma
         if type(e) in [int, float]:
             return torch.tensor(float(e)), sigma
         elif torch.is_tensor(e):
@@ -131,18 +133,32 @@ def test_program(stream, program, style):
     for i in range(n_samples):
         samples.append(next(stream))
     for i in range(len(samples[0])):
-        plt.hist([s[i].item() if s[i].dim() == 0 else torch.mean(s[i]).item() for s in samples], bins=50)
-        plt.savefig(f'figures/program_{program}_output_{i}_from_{style}.png', dpi=200)
-        plt.clf()
+        if samples[0][i].dim() == 0:
+            vals = [s[i].item() for s in samples]
+            plt.hist(vals, bins=50)
+            plt.title(f'program_{program}_output_{i}_from_{style}')
+            plt.savefig(f'figures/program_{program}_output_{i}_from_{style}.png', dpi=200)
+            plt.clf()
+            print(f'program_{program}_output_{i}_from_{style} has marginal expectation {torch.mean(torch.tensor(vals, dtype=torch.float))}')
+        else:
+            for j in range(len(samples[0][i])):
+                for k in range(len(samples[0][i][j])):
+                    vals = [s[i][j][k].item() for s in samples]
+                    plt.hist(vals, bins=50)
+                    plt.title(f'program_{program}_output_{i}_{j}_{k}_from_{style}')
+                    plt.savefig(f'figures/program_{program}_output_{i}_{j}_{k}_from_{style}.png', dpi=200)
+                    plt.clf()
+                    print(f'program_{program}_output_{i}_{j}_{k}_from_{style} has marginal expectation {torch.mean(torch.tensor(vals, dtype=torch.float))}')
+
 
         
 if __name__ == '__main__':
 
     
-    run_deterministic_tests()
-    run_probabilistic_tests()
+#    run_deterministic_tests()
+#    run_probabilistic_tests()
 
-    for i in range(1,5):
+    for i in range(4,5):
         ast = daphne(['desugar', '-i', '../CS532-HW2/programs/{}.daphne'.format(i)])
         print('\n\n\nSample of prior of program {}:'.format(i))
         print(evaluate_program(ast)) # note there is still discrepency between return sigma and not

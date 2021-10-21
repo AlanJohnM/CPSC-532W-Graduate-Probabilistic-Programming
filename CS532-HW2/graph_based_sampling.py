@@ -1,11 +1,10 @@
 import torch
 import torch.distributions as dist
 import copy
-
 from daphne import daphne
 
 from primitives import primitives, distributions
-from evaluation_based_sampling import evaluate_program, test_program
+from evaluation_based_sampling import test_program
 from tests import is_tol, run_prob_test,load_truth
 
 
@@ -13,18 +12,34 @@ from tests import is_tol, run_prob_test,load_truth
 # Python evaluation context here:
 #env = {'normal': dist.Normal,
 #       'sqrt': torch.sqrt}
+env = {}
 
-
-def deterministic_eval(exp):
+def deterministic_eval(e):
     "Evaluation function for the deterministic target language of the graph based representation."
-    if type(exp) is list:
-        return evaluate_program([exp])
-    elif type(exp) in [int, float]:
-        return torch.tensor(float(exp))
-    elif torch.is_tensor(exp):
-        return exp
-    else:
-        raise("Expression type unknown.", exp)
+    if type(e) != list or len(e) == 1:
+        if type(e) == list:
+            e = e[0]
+            if e == 'vector': # ugly sigh
+                return torch.tensor([])
+        if type(e) in [int, float]:
+            return torch.tensor(float(e))
+        elif torch.is_tensor(e):
+            return e
+        elif e in primitives.keys():
+            return primitives[e]
+        elif e in distributions.keys():
+            return distributions[e]
+        elif e in env.keys():
+            return env[e]
+    elif e[0] == 'let':
+        env[e[1][0]] = deterministic_eval(e[1][1])
+        return deterministic_eval(e[2])
+    elif e[0] == 'if':
+        return deterministic_eval(e[2]) if deterministic_eval(e[1]) else deterministic_eval(e[3])
+    elif type(e) == list:
+        c = [deterministic_eval(e[i]) for i in range(len(e))]
+        return c[0](c[1:])
+
 
 # I am lazy and just paraphrased some generic topological sort algorithm from the internets (https://www.educative.io/collection/page/6151088528949248/4547996664463360/5657624383062016)
 def helperFunction(V, A, v, seen, order) :
@@ -42,45 +57,21 @@ def topsort(V, A):
             helperFunction(V, A, v, seen, order)
     return order
         
-def propegate(e, name, sample):
-    if type(e) == list:
-        for i in range(0,len(e)):
-            e[i] = propegate(e[i], name, sample)
-    else:
-        if e == name:
-            return sample
-    return e
-
 def sample_from_joint(graph):
     "This function does ancestral sampling starting from the prior."
-    eval_graph = copy.deepcopy(graph) # otherwise propegation fixes the origional graph which is bad
-        
-    V, A, P, Y = eval_graph[1]['V'], eval_graph[1]['A'], eval_graph[1]['P'], eval_graph[1]['Y']
+    V, A, P, Y = graph[1]['V'], graph[1]['A'], graph[1]['P'], graph[1]['Y']
     for v in V:
         if v not in A.keys():
             A[v] = []
-    
     order = topsort(V,A)
     for v in order:
         if P[v][0] == 'sample*':
-            # we assume that all dependencies have been populated
             sample = deterministic_eval(P[v][1]).sample()
-            
-            eval_graph[-1] = propegate(eval_graph[-1], v, sample)
-            # populate any dependencies
-            for kid in A[v]:
-                P[kid] = propegate(P[kid], v, sample)
-        
+            env[v] = sample
         elif P[v][0] == 'observe*':
-            # TODO: replace with real observe
             fake_sample = Y[v]
-            eval_graph[-1] = propegate(eval_graph[-1], v, sample)
-            # populate any dependencies
-            for kid in A[v]:
-                P[kid] = propegate(P[kid], v, sample)
-        else:
-            raise NotImplementedError()
-    return deterministic_eval(eval_graph[-1])
+            env[v] = fake_sample
+    return deterministic_eval(graph[-1])
     
     
 
@@ -144,10 +135,10 @@ def run_probabilistic_tests():
 if __name__ == '__main__':
     
 
-    run_deterministic_tests()
-    run_probabilistic_tests()
+#    run_deterministic_tests()
+#    run_probabilistic_tests()
 
-    for i in range(1,5):
+    for i in range(4,5):
         graph = daphne(['graph','-i','../CS532-HW2/programs/{}.daphne'.format(i)])
         print('\n\n\nSample of prior of program {}:'.format(i))
         print(sample_from_joint(graph))
