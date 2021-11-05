@@ -1,0 +1,654 @@
+2021-11-02 12:58:58,570 INFO    MainThread:21361 [internal.py:wandb_internal():90] W&B internal server running at pid: 21361, started at: 2021-11-02 12:58:58.569886
+2021-11-02 12:58:58,572 INFO    WriterThread:21361 [datastore.py:open_for_write():77] open: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/run-3vxycoe9.wandb
+2021-11-02 12:58:58,572 DEBUG   HandlerThread:21361 [handler.py:handle_request():130] handle_request: check_version
+2021-11-02 12:58:58,574 DEBUG   SenderThread:21361 [sender.py:send():238] send: header
+2021-11-02 12:58:58,574 DEBUG   SenderThread:21361 [sender.py:send_request():252] send_request: check_version
+2021-11-02 12:58:58,695 DEBUG   SenderThread:21361 [sender.py:send():238] send: run
+2021-11-02 12:58:58,849 INFO    SenderThread:21361 [dir_watcher.py:__init__():169] watching files in: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files
+2021-11-02 12:58:58,849 INFO    SenderThread:21361 [sender.py:_start_run_threads():828] run started: 3vxycoe9 with start time 1635883137
+2021-11-02 12:58:58,849 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:58:58,850 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:58:58,852 DEBUG   HandlerThread:21361 [handler.py:handle_request():130] handle_request: run_start
+2021-11-02 12:58:58,854 DEBUG   HandlerThread:21361 [meta.py:__init__():40] meta init
+2021-11-02 12:58:58,854 DEBUG   HandlerThread:21361 [meta.py:__init__():54] meta init done
+2021-11-02 12:58:58,854 DEBUG   HandlerThread:21361 [meta.py:probe():214] probe
+2021-11-02 12:58:58,857 DEBUG   HandlerThread:21361 [meta.py:_setup_git():204] setup git
+2021-11-02 12:58:58,888 DEBUG   HandlerThread:21361 [meta.py:_setup_git():211] setup git done
+2021-11-02 12:58:58,889 DEBUG   HandlerThread:21361 [meta.py:_save_pip():58] save pip
+2021-11-02 12:58:58,891 DEBUG   HandlerThread:21361 [meta.py:_save_pip():72] save pip done
+2021-11-02 12:58:58,891 DEBUG   HandlerThread:21361 [meta.py:_save_conda():79] save conda
+2021-11-02 12:58:59,854 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:58:59,855 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/requirements.txt
+2021-11-02 12:58:59,855 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/conda-environment.yaml
+2021-11-02 12:59:04,867 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 12:59:06,875 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 12:59:07,878 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 12:59:08,882 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/conda-environment.yaml
+2021-11-02 12:59:09,036 DEBUG   HandlerThread:21361 [meta.py:_save_conda():89] save conda done
+2021-11-02 12:59:09,037 DEBUG   HandlerThread:21361 [meta.py:probe():252] probe done
+2021-11-02 12:59:09,112 DEBUG   HandlerThread:21361 [handler.py:handle_request():130] handle_request: stop_status
+2021-11-02 12:59:09,115 DEBUG   SenderThread:21361 [sender.py:send_request():252] send_request: stop_status
+2021-11-02 12:59:09,215 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:09,215 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:09,216 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:09,217 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:09,217 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:09,218 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:09,218 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:09,219 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:09,220 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:09,220 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:09,220 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:09,221 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:09,221 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:09,221 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:09,222 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:09,222 DEBUG   SenderThread:21361 [sender.py:send():238] send: files
+2021-11-02 12:59:09,222 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-metadata.json with policy now
+2021-11-02 12:59:09,371 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:09,372 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:09,372 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:09,602 INFO    Thread-11 :21361 [upload_job.py:push():137] Uploaded file /var/folders/m5/83jq9n892g11dzcshvfr_yww0000gn/T/tmp562lfuq0wandb/11rraprw-wandb-metadata.json
+2021-11-02 12:59:09,887 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:09,888 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 12:59:09,888 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-metadata.json
+2021-11-02 12:59:10,194 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:10,195 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:10,195 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:10,888 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:10,989 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:10,989 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:10,990 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:11,799 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:11,799 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:11,801 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:11,893 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:11,893 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 12:59:12,613 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:12,614 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:12,614 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:12,897 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:13,489 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:13,490 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:13,490 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:13,900 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:13,901 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 12:59:14,314 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:14,315 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:14,315 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:14,901 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:15,180 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:15,181 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:15,185 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:15,902 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:15,902 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 12:59:15,960 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:15,961 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:15,964 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:16,737 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:16,737 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:16,738 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:16,904 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:17,552 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:17,552 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:17,553 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:17,909 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:17,910 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 12:59:18,359 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:18,359 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:18,360 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:18,911 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:19,194 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:19,194 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:19,195 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:19,915 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:19,916 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 12:59:19,994 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:19,994 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:19,995 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:20,896 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:20,896 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:20,896 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:20,918 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:21,708 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:21,708 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:21,709 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:21,919 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:21,919 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 12:59:22,534 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:22,534 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:22,535 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:22,919 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:23,356 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:23,356 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:23,357 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:23,867 DEBUG   HandlerThread:21361 [handler.py:handle_request():130] handle_request: stop_status
+2021-11-02 12:59:23,867 DEBUG   SenderThread:21361 [sender.py:send_request():252] send_request: stop_status
+2021-11-02 12:59:23,921 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:23,921 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 12:59:24,207 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:24,208 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:24,211 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:24,922 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:25,038 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:25,039 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:25,040 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:25,857 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:25,858 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:25,858 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:25,926 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:25,926 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 12:59:26,659 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:26,660 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:26,661 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:26,929 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:27,414 DEBUG   SenderThread:21361 [sender.py:send():238] send: stats
+2021-11-02 12:59:27,488 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:27,488 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:27,488 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:27,932 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:27,932 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 12:59:28,353 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:28,353 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:28,356 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:28,936 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:29,136 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:29,136 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:29,137 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:29,892 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:29,892 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:29,892 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:29,937 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:29,938 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 12:59:30,651 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:30,652 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:30,652 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:30,940 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:31,442 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:31,442 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:31,444 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:31,943 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:31,943 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 12:59:32,254 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:32,254 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:32,255 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:32,945 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:33,074 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:33,074 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:33,074 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:33,873 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:33,873 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:33,878 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:33,946 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:33,946 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 12:59:34,807 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:34,807 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:34,808 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:34,955 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:35,926 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:35,926 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:35,927 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:35,957 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:35,957 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 12:59:37,013 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:37,013 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:37,014 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:37,961 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:37,961 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 12:59:38,007 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:38,007 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:38,007 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:38,966 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:38,993 DEBUG   HandlerThread:21361 [handler.py:handle_request():130] handle_request: stop_status
+2021-11-02 12:59:38,993 DEBUG   SenderThread:21361 [sender.py:send_request():252] send_request: stop_status
+2021-11-02 12:59:39,229 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:39,229 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:39,230 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:39,969 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:39,969 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 12:59:40,181 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:40,181 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:40,182 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:40,970 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:41,127 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:41,127 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:41,128 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:41,922 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:41,922 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:41,923 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:41,971 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:41,971 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 12:59:42,801 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:42,802 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:42,805 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:42,972 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:43,789 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:43,789 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:43,790 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:43,976 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:43,976 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 12:59:44,603 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:44,603 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:44,604 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:44,979 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:45,513 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:45,513 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:45,514 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:45,983 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:45,983 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 12:59:46,424 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:46,424 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:46,425 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:46,988 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:47,292 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:47,293 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:47,294 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:47,993 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:47,993 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 12:59:48,267 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:48,268 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:48,268 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:48,997 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:49,105 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:49,105 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:49,106 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:49,999 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:50,000 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 12:59:50,042 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:50,043 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:50,044 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:50,917 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:50,917 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:50,917 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:51,003 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:51,813 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:51,813 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:51,813 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:52,004 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:52,004 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 12:59:52,660 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:52,661 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:52,664 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:53,006 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:53,515 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:53,515 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:53,516 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:54,010 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:54,010 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 12:59:54,095 DEBUG   HandlerThread:21361 [handler.py:handle_request():130] handle_request: stop_status
+2021-11-02 12:59:54,095 DEBUG   SenderThread:21361 [sender.py:send_request():252] send_request: stop_status
+2021-11-02 12:59:54,394 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:54,395 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:54,395 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:55,013 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:55,260 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:55,261 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:55,262 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:56,016 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:56,016 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 12:59:56,235 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:56,236 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:56,236 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:57,018 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:57,067 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:57,070 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:57,074 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:58,022 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:58,022 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 12:59:58,025 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:58,025 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:58,026 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:58,047 DEBUG   SenderThread:21361 [sender.py:send():238] send: stats
+2021-11-02 12:59:58,866 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:58,867 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:58,867 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 12:59:59,023 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 12:59:59,840 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 12:59:59,840 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 12:59:59,841 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:00,024 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:00,025 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 13:00:00,735 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:00,736 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:00,736 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:01,025 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:01,616 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:01,616 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:01,617 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:02,029 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:02,030 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 13:00:02,505 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:02,505 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:02,506 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:03,031 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:03,380 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:03,380 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:03,384 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:04,033 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:04,033 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 13:00:04,282 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:04,282 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:04,283 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:05,038 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:05,145 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:05,145 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:05,146 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:05,981 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:05,981 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:05,982 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:06,040 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:06,040 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 13:00:06,801 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:06,801 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:06,802 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:07,040 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:07,725 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:07,726 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:07,727 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:08,045 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:08,045 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 13:00:08,586 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:08,586 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:08,587 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:09,050 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:09,200 DEBUG   HandlerThread:21361 [handler.py:handle_request():130] handle_request: stop_status
+2021-11-02 13:00:09,200 DEBUG   SenderThread:21361 [sender.py:send_request():252] send_request: stop_status
+2021-11-02 13:00:09,470 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:09,471 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:09,471 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:10,053 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:10,053 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 13:00:10,403 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:10,403 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:10,404 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:11,053 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:11,383 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:11,383 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:11,388 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:12,059 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:12,059 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 13:00:12,439 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:12,439 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:12,440 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:13,061 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:13,547 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:13,547 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:13,558 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:14,066 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:14,067 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 13:00:14,491 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:14,492 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:14,492 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:15,070 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:15,590 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:15,590 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:15,591 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:16,071 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:16,071 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 13:00:16,524 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:16,525 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:16,528 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:17,072 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:17,369 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:17,369 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:17,370 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:18,075 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:18,075 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 13:00:18,295 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:18,295 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:18,296 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:19,080 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:19,253 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:19,253 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:19,255 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:20,083 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:20,083 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 13:00:20,500 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:20,501 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:20,505 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:21,086 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:21,410 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:21,410 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:21,419 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:22,090 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:22,091 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 13:00:22,312 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:22,312 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:22,313 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:23,093 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:23,141 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:23,142 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:23,142 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:23,973 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:23,973 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:23,973 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:24,095 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:24,096 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 13:00:24,346 DEBUG   HandlerThread:21361 [handler.py:handle_request():130] handle_request: stop_status
+2021-11-02 13:00:24,346 DEBUG   SenderThread:21361 [sender.py:send_request():252] send_request: stop_status
+2021-11-02 13:00:24,834 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:24,834 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:24,835 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:25,100 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:25,636 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:25,636 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:25,636 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:26,106 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:26,106 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 13:00:26,754 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:26,754 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:26,755 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:27,109 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:28,113 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 13:00:28,629 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:28,630 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:28,632 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:28,656 DEBUG   SenderThread:21361 [sender.py:send():238] send: stats
+2021-11-02 13:00:29,115 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:29,863 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:29,864 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:29,864 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:30,116 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:30,116 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 13:00:30,645 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:30,645 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:30,654 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:31,120 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:31,452 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:31,452 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:31,453 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:32,123 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:32,123 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 13:00:32,269 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:32,269 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:32,270 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:33,059 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:33,060 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:33,061 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:33,127 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:33,891 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:33,891 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:33,892 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:34,130 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:34,130 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 13:00:34,690 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:34,690 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:34,691 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:35,134 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:35,543 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:35,543 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:35,544 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:36,137 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:36,137 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 13:00:36,427 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:36,427 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:36,428 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:37,140 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:37,447 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:37,447 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:37,448 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:38,143 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:38,144 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 13:00:38,327 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:38,328 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:38,336 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:39,147 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:39,275 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:39,275 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:39,276 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:39,448 DEBUG   HandlerThread:21361 [handler.py:handle_request():130] handle_request: stop_status
+2021-11-02 13:00:39,448 DEBUG   SenderThread:21361 [sender.py:send_request():252] send_request: stop_status
+2021-11-02 13:00:40,149 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:40,149 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 13:00:40,165 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:40,166 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:40,166 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:41,010 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:41,010 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:41,010 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:41,151 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:41,807 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:41,808 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:41,812 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:42,154 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:42,154 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 13:00:42,649 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:42,649 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:42,649 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:43,158 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:43,481 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:43,482 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:43,482 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:44,161 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:44,162 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 13:00:44,459 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:44,459 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:44,460 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:45,166 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:45,334 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:45,334 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:45,335 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:46,171 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:46,172 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 13:00:46,384 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:46,384 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:46,385 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:47,176 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:47,258 DEBUG   SenderThread:21361 [sender.py:send():238] send: history
+2021-11-02 13:00:47,259 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:47,259 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:47,784 WARNING MainThread:21361 [internal.py:wandb_internal():146] Internal process interrupt: 1
+2021-11-02 13:00:48,180 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:48,181 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 13:00:50,176 DEBUG   HandlerThread:21361 [handler.py:handle_request():130] handle_request: poll_exit
+2021-11-02 13:00:50,176 DEBUG   SenderThread:21361 [sender.py:send():238] send: telemetry
+2021-11-02 13:00:50,176 DEBUG   SenderThread:21361 [sender.py:send():238] send: exit
+2021-11-02 13:00:50,176 INFO    SenderThread:21361 [sender.py:send_exit():370] handling exit code: 255
+2021-11-02 13:00:50,176 INFO    SenderThread:21361 [sender.py:send_exit():372] handling runtime: 111
+2021-11-02 13:00:50,177 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:50,177 INFO    SenderThread:21361 [sender.py:send_exit():382] send defer
+2021-11-02 13:00:50,177 DEBUG   SenderThread:21361 [sender.py:send_request():252] send_request: poll_exit
+2021-11-02 13:00:50,177 DEBUG   HandlerThread:21361 [handler.py:handle_request():130] handle_request: defer
+2021-11-02 13:00:50,177 INFO    HandlerThread:21361 [handler.py:handle_request_defer():147] handle defer: 0
+2021-11-02 13:00:50,178 DEBUG   SenderThread:21361 [sender.py:send_request():252] send_request: defer
+2021-11-02 13:00:50,178 INFO    SenderThread:21361 [sender.py:send_request_defer():391] handle sender defer: 0
+2021-11-02 13:00:50,178 INFO    SenderThread:21361 [sender.py:transition_state():395] send defer: 1
+2021-11-02 13:00:50,178 DEBUG   HandlerThread:21361 [handler.py:handle_request():130] handle_request: defer
+2021-11-02 13:00:50,178 INFO    HandlerThread:21361 [handler.py:handle_request_defer():147] handle defer: 1
+2021-11-02 13:00:50,186 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:50,186 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 13:00:50,236 DEBUG   SenderThread:21361 [sender.py:send_request():252] send_request: defer
+2021-11-02 13:00:50,236 INFO    SenderThread:21361 [sender.py:send_request_defer():391] handle sender defer: 1
+2021-11-02 13:00:50,236 INFO    SenderThread:21361 [sender.py:transition_state():395] send defer: 2
+2021-11-02 13:00:50,236 DEBUG   SenderThread:21361 [sender.py:send():238] send: stats
+2021-11-02 13:00:50,237 DEBUG   HandlerThread:21361 [handler.py:handle_request():130] handle_request: defer
+2021-11-02 13:00:50,237 INFO    HandlerThread:21361 [handler.py:handle_request_defer():147] handle defer: 2
+2021-11-02 13:00:50,237 DEBUG   SenderThread:21361 [sender.py:send_request():252] send_request: defer
+2021-11-02 13:00:50,237 INFO    SenderThread:21361 [sender.py:send_request_defer():391] handle sender defer: 2
+2021-11-02 13:00:50,237 INFO    SenderThread:21361 [sender.py:transition_state():395] send defer: 3
+2021-11-02 13:00:50,238 DEBUG   HandlerThread:21361 [handler.py:handle_request():130] handle_request: defer
+2021-11-02 13:00:50,238 INFO    HandlerThread:21361 [handler.py:handle_request_defer():147] handle defer: 3
+2021-11-02 13:00:50,238 DEBUG   SenderThread:21361 [sender.py:send():238] send: summary
+2021-11-02 13:00:50,239 INFO    SenderThread:21361 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-02 13:00:50,239 DEBUG   SenderThread:21361 [sender.py:send_request():252] send_request: defer
+2021-11-02 13:00:50,239 INFO    SenderThread:21361 [sender.py:send_request_defer():391] handle sender defer: 3
+2021-11-02 13:00:50,239 INFO    SenderThread:21361 [sender.py:transition_state():395] send defer: 4
+2021-11-02 13:00:50,240 DEBUG   HandlerThread:21361 [handler.py:handle_request():130] handle_request: defer
+2021-11-02 13:00:50,240 INFO    HandlerThread:21361 [handler.py:handle_request_defer():147] handle defer: 4
+2021-11-02 13:00:50,240 DEBUG   SenderThread:21361 [sender.py:send_request():252] send_request: defer
+2021-11-02 13:00:50,240 INFO    SenderThread:21361 [sender.py:send_request_defer():391] handle sender defer: 4
+2021-11-02 13:00:50,280 DEBUG   HandlerThread:21361 [handler.py:handle_request():130] handle_request: poll_exit
+2021-11-02 13:00:50,374 INFO    SenderThread:21361 [sender.py:transition_state():395] send defer: 5
+2021-11-02 13:00:50,375 DEBUG   SenderThread:21361 [sender.py:send_request():252] send_request: poll_exit
+2021-11-02 13:00:50,375 DEBUG   HandlerThread:21361 [handler.py:handle_request():130] handle_request: defer
+2021-11-02 13:00:50,375 INFO    HandlerThread:21361 [handler.py:handle_request_defer():147] handle defer: 5
+2021-11-02 13:00:50,375 DEBUG   SenderThread:21361 [sender.py:send_request():252] send_request: defer
+2021-11-02 13:00:50,375 INFO    SenderThread:21361 [sender.py:send_request_defer():391] handle sender defer: 5
+2021-11-02 13:00:50,375 INFO    SenderThread:21361 [dir_watcher.py:finish():283] shutting down directory watcher
+2021-11-02 13:00:50,481 DEBUG   HandlerThread:21361 [handler.py:handle_request():130] handle_request: poll_exit
+2021-11-02 13:00:51,187 INFO    Thread-8  :21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:51,187 INFO    SenderThread:21361 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/config.yaml
+2021-11-02 13:00:51,187 INFO    SenderThread:21361 [dir_watcher.py:finish():313] scan: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files
+2021-11-02 13:00:51,188 INFO    SenderThread:21361 [dir_watcher.py:finish():327] scan save: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/requirements.txt requirements.txt
+2021-11-02 13:00:51,188 INFO    SenderThread:21361 [dir_watcher.py:finish():327] scan save: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log output.log
+2021-11-02 13:00:51,188 INFO    SenderThread:21361 [dir_watcher.py:finish():327] scan save: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/config.yaml config.yaml
+2021-11-02 13:00:51,191 INFO    SenderThread:21361 [dir_watcher.py:finish():327] scan save: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json wandb-summary.json
+2021-11-02 13:00:51,194 INFO    SenderThread:21361 [dir_watcher.py:finish():327] scan save: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/conda-environment.yaml conda-environment.yaml
+2021-11-02 13:00:51,200 INFO    SenderThread:21361 [dir_watcher.py:finish():327] scan save: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-metadata.json wandb-metadata.json
+2021-11-02 13:00:51,200 INFO    SenderThread:21361 [sender.py:transition_state():395] send defer: 6
+2021-11-02 13:00:51,200 DEBUG   SenderThread:21361 [sender.py:send_request():252] send_request: poll_exit
+2021-11-02 13:00:51,201 DEBUG   HandlerThread:21361 [handler.py:handle_request():130] handle_request: defer
+2021-11-02 13:00:51,202 INFO    HandlerThread:21361 [handler.py:handle_request_defer():147] handle defer: 6
+2021-11-02 13:00:51,205 DEBUG   SenderThread:21361 [sender.py:send_request():252] send_request: defer
+2021-11-02 13:00:51,206 INFO    SenderThread:21361 [sender.py:send_request_defer():391] handle sender defer: 6
+2021-11-02 13:00:51,206 INFO    SenderThread:21361 [file_pusher.py:finish():177] shutting down file pusher
+2021-11-02 13:00:51,308 DEBUG   HandlerThread:21361 [handler.py:handle_request():130] handle_request: poll_exit
+2021-11-02 13:00:51,309 DEBUG   SenderThread:21361 [sender.py:send_request():252] send_request: poll_exit
+2021-11-02 13:00:51,411 DEBUG   HandlerThread:21361 [handler.py:handle_request():130] handle_request: poll_exit
+2021-11-02 13:00:51,411 DEBUG   SenderThread:21361 [sender.py:send_request():252] send_request: poll_exit
+2021-11-02 13:00:51,513 DEBUG   HandlerThread:21361 [handler.py:handle_request():130] handle_request: poll_exit
+2021-11-02 13:00:51,513 DEBUG   SenderThread:21361 [sender.py:send_request():252] send_request: poll_exit
+2021-11-02 13:00:51,617 DEBUG   HandlerThread:21361 [handler.py:handle_request():130] handle_request: poll_exit
+2021-11-02 13:00:51,617 DEBUG   SenderThread:21361 [sender.py:send_request():252] send_request: poll_exit
+2021-11-02 13:00:51,702 INFO    Thread-16 :21361 [upload_job.py:push():137] Uploaded file /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/conda-environment.yaml
+2021-11-02 13:00:51,704 INFO    Thread-12 :21361 [upload_job.py:push():137] Uploaded file /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/requirements.txt
+2021-11-02 13:00:51,709 INFO    Thread-13 :21361 [upload_job.py:push():137] Uploaded file /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/output.log
+2021-11-02 13:00:51,721 DEBUG   HandlerThread:21361 [handler.py:handle_request():130] handle_request: poll_exit
+2021-11-02 13:00:51,721 DEBUG   SenderThread:21361 [sender.py:send_request():252] send_request: poll_exit
+2021-11-02 13:00:51,722 INFO    Thread-14 :21361 [upload_job.py:push():137] Uploaded file /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/config.yaml
+2021-11-02 13:00:51,750 INFO    Thread-15 :21361 [upload_job.py:push():137] Uploaded file /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/files/wandb-summary.json
+2021-11-02 13:00:51,826 DEBUG   HandlerThread:21361 [handler.py:handle_request():130] handle_request: poll_exit
+2021-11-02 13:00:51,827 DEBUG   SenderThread:21361 [sender.py:send_request():252] send_request: poll_exit
+2021-11-02 13:00:51,931 DEBUG   HandlerThread:21361 [handler.py:handle_request():130] handle_request: poll_exit
+2021-11-02 13:00:51,931 DEBUG   SenderThread:21361 [sender.py:send_request():252] send_request: poll_exit
+2021-11-02 13:00:51,952 INFO    Thread-7  :21361 [sender.py:transition_state():395] send defer: 7
+2021-11-02 13:00:51,953 DEBUG   HandlerThread:21361 [handler.py:handle_request():130] handle_request: defer
+2021-11-02 13:00:51,953 INFO    HandlerThread:21361 [handler.py:handle_request_defer():147] handle defer: 7
+2021-11-02 13:00:51,953 DEBUG   SenderThread:21361 [sender.py:send_request():252] send_request: defer
+2021-11-02 13:00:51,953 INFO    SenderThread:21361 [sender.py:send_request_defer():391] handle sender defer: 7
+2021-11-02 13:00:52,034 DEBUG   HandlerThread:21361 [handler.py:handle_request():130] handle_request: poll_exit
+2021-11-02 13:00:52,140 INFO    SenderThread:21361 [sender.py:transition_state():395] send defer: 8
+2021-11-02 13:00:52,140 DEBUG   SenderThread:21361 [sender.py:send_request():252] send_request: poll_exit
+2021-11-02 13:00:52,140 DEBUG   HandlerThread:21361 [handler.py:handle_request():130] handle_request: defer
+2021-11-02 13:00:52,141 INFO    HandlerThread:21361 [handler.py:handle_request_defer():147] handle defer: 8
+2021-11-02 13:00:52,141 DEBUG   SenderThread:21361 [sender.py:send_request():252] send_request: defer
+2021-11-02 13:00:52,141 INFO    SenderThread:21361 [sender.py:send_request_defer():391] handle sender defer: 8
+2021-11-02 13:00:52,141 INFO    SenderThread:21361 [sender.py:transition_state():395] send defer: 9
+2021-11-02 13:00:52,142 DEBUG   SenderThread:21361 [sender.py:send():238] send: final
+2021-11-02 13:00:52,142 DEBUG   HandlerThread:21361 [handler.py:handle_request():130] handle_request: defer
+2021-11-02 13:00:52,142 INFO    HandlerThread:21361 [handler.py:handle_request_defer():147] handle defer: 9
+2021-11-02 13:00:52,142 DEBUG   SenderThread:21361 [sender.py:send():238] send: footer
+2021-11-02 13:00:52,142 DEBUG   SenderThread:21361 [sender.py:send_request():252] send_request: defer
+2021-11-02 13:00:52,143 INFO    SenderThread:21361 [sender.py:send_request_defer():391] handle sender defer: 9
+2021-11-02 13:00:52,246 DEBUG   HandlerThread:21361 [handler.py:handle_request():130] handle_request: poll_exit
+2021-11-02 13:00:52,246 DEBUG   SenderThread:21361 [sender.py:send_request():252] send_request: poll_exit
+2021-11-02 13:00:52,247 INFO    SenderThread:21361 [file_pusher.py:join():182] waiting for file pusher
+2021-11-02 13:00:52,437 DEBUG   HandlerThread:21361 [handler.py:handle_request():130] handle_request: get_summary
+2021-11-02 13:00:52,438 DEBUG   HandlerThread:21361 [handler.py:handle_request():130] handle_request: sampled_history
+2021-11-02 13:00:52,439 DEBUG   HandlerThread:21361 [handler.py:handle_request():130] handle_request: shutdown
+2021-11-02 13:00:52,439 INFO    HandlerThread:21361 [handler.py:finish():731] shutting down handler
+2021-11-02 13:00:53,143 INFO    WriterThread:21361 [datastore.py:close():281] close: /Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/wandb/run-20211102_125857-3vxycoe9/run-3vxycoe9.wandb
+2021-11-02 13:00:53,440 INFO    SenderThread:21361 [sender.py:finish():1091] shutting down sender
+2021-11-02 13:00:53,440 INFO    SenderThread:21361 [file_pusher.py:finish():177] shutting down file pusher
+2021-11-02 13:00:53,441 INFO    SenderThread:21361 [file_pusher.py:join():182] waiting for file pusher
+2021-11-02 13:00:53,444 INFO    MainThread:21361 [internal.py:handle_exit():77] Internal process exited

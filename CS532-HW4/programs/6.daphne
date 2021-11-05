@@ -1,0 +1,8 @@
+(let [mus (sample (dirichlet [0.5 0.5 0.5]))
+       d1 (normal (first mus) 1.0)
+       d2 (normal (second mus) 1.0)
+       d3 (normal (last mus) 1.0)]
+        (observe d1 5)
+        (observe d2 0.1)
+        (observe d3 0.1)
+  mus)

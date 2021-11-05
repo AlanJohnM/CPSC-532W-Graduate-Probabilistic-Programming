@@ -1,0 +1,46 @@
+
+  0%|                                                                                       | 0/100000 [00:00<?, ?it/s]
+-13824.7451171875
+
+  0%|                                                             | 2/100000 [00:02<40:24:07,  1.45s/it, ELBO=-1.1e+04]
+-549752704.0
+-31466412.0
+
+  0%|                                                            | 5/100000 [00:05<29:41:27,  1.07s/it, ELBO=-1.86e+04]
+-10638.6953125
+
+  0%|                                                            | 7/100000 [00:07<26:39:32,  1.04it/s, ELBO=-4.04e+06]
+-2080886.125
+-35876.2421875
+
+  0%|                                                           | 10/100000 [00:09<24:04:18,  1.15it/s, ELBO=-2.66e+05]
+
+  0%|                                                           | 11/100000 [00:10<23:33:30,  1.18it/s, ELBO=-1.85e+04]
+-25232.080078125
+
+  0%|                                                           | 13/100000 [00:12<28:55:53,  1.04s/it, ELBO=-1.52e+04]
+-66677.5078125
+-34147.3046875
+
+  0%|                                                           | 17/100000 [00:16<25:57:34,  1.07it/s, ELBO=-5.38e+03]Traceback (most recent call last):
+  File "inference.py", line 372, in <module>
+    samples = inference_algorithm(program, args.n_samples)
+  File "/Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/black_box_variational_inference.py", line 167, in black_box_variational_inference
+    r_tl, sigma_tl = evaluate_program(ast,sigma=sigma)
+  File "/Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/black_box_variational_inference.py", line 36, in evaluate_program
+    return EVAL(ast[0], sigma, l, rho)
+  File "/Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/black_box_variational_inference.py", line 81, in EVAL
+    return EVAL(e[2], sigma, l, rho)
+  File "/Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/black_box_variational_inference.py", line 81, in EVAL
+    return EVAL(e[2], sigma, l, rho)
+  File "/Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/black_box_variational_inference.py", line 79, in EVAL
+    c_1, sigma = EVAL(e[1][1], sigma, l, rho)
+  File "/Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/black_box_variational_inference.py", line 68, in EVAL
+    log_W_v = d.log_prob(c) - q_log_prob
+  File "/Users/alansmacbook/anaconda3/lib/python3.7/site-packages/torch/distributions/dirichlet.py", line 69, in log_prob
+    self._validate_sample(value)
+  File "/Users/alansmacbook/anaconda3/lib/python3.7/site-packages/torch/distributions/distribution.py", line 286, in _validate_sample
+    valid = support.check(value)
+  File "/Users/alansmacbook/anaconda3/lib/python3.7/site-packages/torch/distributions/constraints.py", line 399, in check
+    return torch.all(value >= 0, dim=-1) & ((value.sum(-1) - 1).abs() < 1e-6)
+KeyboardInterrupt
