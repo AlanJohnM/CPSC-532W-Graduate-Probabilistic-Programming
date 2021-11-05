@@ -1,0 +1,105 @@
+
+  0%|                                                            | 1/100000 [00:00<26:14:50,  1.06it/s, ELBO=-3.09e+04]
+-30855.1171875
+-1206.1181640625
+
+  0%|                                                                 | 3/100000 [00:02<25:53:11,  1.07it/s, ELBO=-109]
+-110.84538269042969
+-74.23316192626953
+
+  0%|                                                                | 6/100000 [00:05<25:12:27,  1.10it/s, ELBO=-73.3]
+-84.34857177734375
+
+  0%|                                                                 | 8/100000 [00:07<23:52:31,  1.16it/s, ELBO=-408]
+-435.4305725097656
+-458.60601806640625
+
+  0%|                                                                | 11/100000 [00:09<22:49:39,  1.22it/s, ELBO=-485]
+-492.59710693359375
+
+
+  0%|                                                                | 16/100000 [00:13<22:29:39,  1.23it/s, ELBO=-559]
+-536.5942993164062
+-557.6380615234375
+
+  0%|                                                                | 18/100000 [00:15<22:40:25,  1.22it/s, ELBO=-585]
+-569.0288696289062
+
+  0%|                                                                | 20/100000 [00:16<23:27:40,  1.18it/s, ELBO=-433]
+-603.427734375
+
+  0%|                                                                | 23/100000 [00:19<22:22:54,  1.24it/s, ELBO=-454]
+-436.54937744140625
+-446.3514099121094
+
+  0%|                                                                | 26/100000 [00:21<21:52:12,  1.27it/s, ELBO=-499]
+-452.351318359375
+-466.9776611328125
+
+  0%|                                                                | 28/100000 [00:23<22:01:17,  1.26it/s, ELBO=-557]
+-472.7637634277344
+-557.02734375
+-567.7277221679688
+
+  0%|                                                                | 30/100000 [00:24<22:45:08,  1.22it/s, ELBO=-586]
+-563.2426147460938
+-593.9603881835938
+
+  0%|                                                                | 33/100000 [00:27<22:04:45,  1.26it/s, ELBO=-573]
+-573.9452514648438
+
+  0%|                                                                | 35/100000 [00:29<22:39:53,  1.23it/s, ELBO=-579]
+-582.842041015625
+-585.546875
+
+  0%|                                                                | 38/100000 [00:31<23:12:28,  1.20it/s, ELBO=-586]
+-580.4117431640625
+
+  0%|                                                                | 40/100000 [00:33<23:01:48,  1.21it/s, ELBO=-582]
+-576.3820190429688
+-589.805908203125
+
+  0%|                                                                | 43/100000 [00:35<22:20:37,  1.24it/s, ELBO=-580]
+-601.56298828125
+
+  0%|                                                                | 45/100000 [00:37<22:30:31,  1.23it/s, ELBO=-610]
+-625.3895874023438
+-647.4999389648438
+
+  0%|                                                                | 48/100000 [00:39<22:12:24,  1.25it/s, ELBO=-631]
+-632.61572265625
+
+  0%|                                                                | 50/100000 [00:41<21:36:40,  1.28it/s, ELBO=-632]
+-619.2412719726562
+-602.9423828125
+
+  0%|                                                                | 53/100000 [00:43<22:36:26,  1.23it/s, ELBO=-580]
+-559.118896484375
+
+  0%|                                                                | 55/100000 [00:45<22:36:27,  1.23it/s, ELBO=-533]
+-532.16455078125
+-512.7974853515625
+
+  0%|                                                                | 58/100000 [00:47<22:32:21,  1.23it/s, ELBO=-504]
+-487.7582092285156
+  0%|                                                                | 60/100000 [00:49<21:58:37,  1.26it/s, ELBO=-441]Traceback (most recent call last):
+  File "inference.py", line 372, in <module>
+    samples = inference_algorithm(program, args.n_samples)
+  File "/Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/black_box_variational_inference.py", line 161, in black_box_variational_inference
+    r_tl, sigma_tl = evaluate_program(ast,sigma=sigma)
+  File "/Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/black_box_variational_inference.py", line 36, in evaluate_program
+    return EVAL(ast[0], sigma, l, rho)
+  File "/Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/black_box_variational_inference.py", line 81, in EVAL
+    return EVAL(e[2], sigma, l, rho)
+  File "/Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/black_box_variational_inference.py", line 81, in EVAL
+    return EVAL(e[2], sigma, l, rho)
+  File "/Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/black_box_variational_inference.py", line 79, in EVAL
+    c_1, sigma = EVAL(e[1][1], sigma, l, rho)
+  File "/Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/black_box_variational_inference.py", line 65, in EVAL
+    q_log_prob = sigma['Q'][v].log_prob(c)
+  File "/Users/alansmacbook/anaconda3/lib/python3.7/site-packages/torch/distributions/dirichlet.py", line 69, in log_prob
+    self._validate_sample(value)
+  File "/Users/alansmacbook/anaconda3/lib/python3.7/site-packages/torch/distributions/distribution.py", line 289, in _validate_sample
+    "Expected value argument "
+ValueError: Expected value argument (Tensor of shape (3,)) to be within the support (Simplex()) of the distribution Dirichlet(concentration: torch.Size([3])), but found invalid values:
+tensor([1.1755e-38, 1.1755e-38, 1.1755e-38])
