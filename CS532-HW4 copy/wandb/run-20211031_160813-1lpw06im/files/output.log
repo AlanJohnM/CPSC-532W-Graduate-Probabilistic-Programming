@@ -1,6 +1,0 @@
-  0%|                                                                                                                 | 0/10000 [00:00<?, ?it/s, ELBO=-33.4]Traceback (most recent call last):
-  File "inference.py", line 372, in <module>
-    samples = inference_algorithm(program, args.n_samples)
-  File "/Users/alansmacbook/Desktop/CPSC 532W/CPSC-532W-Graduate-Probabilistic-Programming/CS532-HW4/black_box_variational_inference.py", line 168, in black_box_variational_inference
-    wandb.log({'Mu':q.Parameters()[0]})
-NameError: name 'q' is not defined
