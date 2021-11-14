@@ -1,7 +1,7 @@
 import torch
 import torch.distributions as dist
 
-class Normal(dist.Normal):
+class GradNormal(dist.Normal):
     
     def __init__(self, loc, scale, copy=False):
         
@@ -12,9 +12,7 @@ class Normal(dist.Normal):
                 self.optim_scale = torch.log(torch.exp(scale) - 1).clone().detach().requires_grad_()
         else:
             self.optim_scale = scale
-        
-        #print ('here', self.optim_scale)
-        
+
         super().__init__(loc, torch.nn.functional.softplus(self.optim_scale))
     
     def Parameters(self):
@@ -40,7 +38,7 @@ class Normal(dist.Normal):
         return super().sample()
 
 # citing Gaurav for this idea, was smart
-class UniformContinuous(dist.Gamma):
+class GradUniformContinuous(dist.Gamma):
 
     def __init__(self, low, high, copy=False):
         if not copy:
@@ -60,12 +58,12 @@ class UniformContinuous(dist.Gamma):
         Return a copy  of the distribution, with parameters that require_grad
         """
         ps = [p.clone().detach().requires_grad_() for p in self.Parameters()]
-        return UniformContinuous(*ps, copy=True)
+        return GradUniformContinuous(*ps, copy=True)
         
     def log_prob(self, x):
         return super().log_prob(x)
     
-class Bernoulli(dist.Bernoulli):
+class GradBernoulli(dist.Bernoulli):
     
     def __init__(self, probs=None, logits=None):
         if logits is None and probs is None:
@@ -94,7 +92,7 @@ class Bernoulli(dist.Bernoulli):
         return super().sample()
     
     
-class Categorical(dist.Categorical):
+class GradCategorical(dist.Categorical):
     
     def __init__(self, probs=None, logits=None, validate_args=None):
         
@@ -130,7 +128,7 @@ class Categorical(dist.Categorical):
     def sample(self):
         return super().sample()
     
-class Dirichlet(dist.Dirichlet):
+class GradDirichlet(dist.Dirichlet):
     
     def __init__(self, concentration):
         #NOTE: logits automatically get added
@@ -152,7 +150,7 @@ class Dirichlet(dist.Dirichlet):
     def sample(self):
         return super().sample()
         
-class Gamma(dist.Gamma):
+class GradGamma(dist.Gamma):
     
     def __init__(self, concentration, rate, copy=False):
         
@@ -184,11 +182,12 @@ class Gamma(dist.Gamma):
         self.rate = torch.nn.functional.softplus(self.optim_rate)
         
         return super().log_prob(x)
+        
     def sample(self):
         return super().sample()
     
     
-class Beta(dist.Beta):
+class GradBeta(dist.Beta):
     
     def __init__(self, concentration1, concentration0, copy=False):
         
@@ -215,68 +214,225 @@ class Beta(dist.Beta):
         
         return Beta(torch.FloatTensor([concentration1]), torch.FloatTensor([concentration0]), copy=True)
     def log_prob(self, x):
-        
-        #print (self.concentration0, self.concentration1)
-        #self.concentration1 = 5
-        #print ('here', torch.nn.functional.softplus(self.optim_concentration0))
-        #print (se)
-        
-        #self.concentration0 = torch.nn.functional.softplus(self.optim_concentration0)
-        #self.optim_concentration0 = torch.FloatTensor([torch.nn.functional.softplus(self.optim_concentration0)])
-        
         self.concentration0 = torch.nn.functional.softplus(self.optim_concentration0)
         
         return super().log_prob(x)
+
     def sample(self):
         return super().sample()
 
 
-distributions = {
-    'normal': Normal,
-    'bernoulli': Bernoulli,
-    'flip': Bernoulli,
-    'categorical' : Categorical,
-    'discrete' : Categorical,
-    'dirichlet' : Dirichlet,
-    'gamma' : Gamma,
-    'uniform-continuous': UniformContinuous
+
+grad_distributions = {
+    'normal': GradNormal,
+    'bernoulli': GradBernoulli,
+    'flip': GradBernoulli,
+    'categorical' : GradCategorical,
+    'discrete' : GradCategorical,
+    'dirichlet' : GradDirichlet,
+    'gamma' : GradGamma,
+    'uniform-continuous': GradUniformContinuous
 }
 
-if __name__ == '__main__':
+class BaseDistribution():
+
+    def __init__(self, dist, params):
+        self.dist = dist(*params)
+        self.params = params
+
+    def sample(self):
+        return self.dist.sample()
+        
+    def observe(self, x):
+        return self.dist.log_prob(x)
+        
+    def get_params(self):
+        return self.params
+        
+
+class Normal(BaseDistribution):
+    def __init__(self, params):
+        super().__init__(torch.distributions.Normal, params)
     
-    ##how to use this, 
-    #given some input tensors that don't necessarily have gradients enables
-    scale = torch.tensor(1.)
-    loc = torch.tensor(0.)
+class Uniform(BaseDistribution):
+    def __init__(self, params):
+        super().__init__(torch.distributions.Uniform, params)
+        
+        
+class Bernoulli(BaseDistribution):
+    def __init__(self, params):
+        super().__init__(torch.distributions.Bernoulli, params)
     
-    #and some data
-    data = torch.tensor(2.)
+class Exponential(BaseDistribution):
+    def __init__(self, params):
+        super().__init__(torch.distributions.Exponential, params)
+        
+class Beta(BaseDistribution):
+    def __init__(self, params):
+        super().__init__(torch.distributions.Beta, params)
+
+class Discrete(BaseDistribution):
+    def __init__(self, params):
+        super().__init__(torch.distributions.Categorical, params)
+        
+class Dirichlet(BaseDistribution):
+    def __init__(self, params):
+        super().__init__(torch.distributions.Dirichlet, params)
+
+class Gamma(BaseDistribution):
+    def __init__(self, params):
+        super().__init__(torch.distributions.Gamma, params)
+
+class Dirac():
+
+    # If we are using a soft dirac, this will be modelled as a normal with epsilon variance centered at x_0, otherwise it's a point mass
+    def __init__(self, x_0, soft=True):
+        self.x_0 = x_0[0] # all the other distributions eat lists so this one will have to deal with it
+        self.eps = torch.tensor(1e-2)
+        self.soft = soft
     
-    #construct a distribution
-    d = Normal(loc, scale)
+    def sample(self):
+        return self.x_0
+        
+    def observe(self, x):
+        if self.soft:
+#            return torch.distributions.Normal(self.x_0, self.eps).log_prob(torch.clip(x,self.x_0-3*self.eps,self.x_0+3*self.eps))
+            return torch.distributions.Normal(self.x_0, self.eps).log_prob(x)
+        else:
+            return torch.tensor(float(x == self.x_0))
+        
+    def get_params(self):
+        return self.x_0
+
+def push_addr(alpha, value):
+    return alpha + value
+
+
+def put(args):
+    try:
+        args[0][args[1].item() if type(args[0]) == dict else args[1].long()] = args[2]
+    except:
+        args[0][args[1]] = args[2]
+    return args[0]
     
-    #now you can make a copy, that has gradients enabled
-    dg = d.make_copy_with_grads()
+def get(args):
+    try:
+        return args[0][args[1].item()] if type(args[0]) == dict else args[0][args[1].long()]
+    except:
+        return args[0][args[1]]
+
+def vector(args): #literally the wortst thing ever
+    try:
+        if torch.is_tensor(args[0]):
+            return torch.stack(args)
+        elif type(args[0]) in [int, float]:
+            return torch.tensor(args)
+        else:
+            return args
+    except:
+        return args
+
+def hash_map(args):
+    try:
+        return {args[i].item() :args[i+1] for i in range(0,len(args),2)}
+    except:
+        return {args[i]:args[i+1] for i in range(0,len(args),2)}
+        
+def combine(format, args):
+    if torch.is_tensor(args[0]) and torch.is_tensor(args[1]):
+        if format in ['append','conj']:
+            return torch.hstack([args[0],args[1]])
+        else:
+            return torch.hstack([args[1],args[0]])
+    elif torch.is_tensor(args[0]) and not torch.is_tensor(args[1]):
+        if format in ['append','conj']:
+            return torch.hstack([args[0],torch.tensor(args[1])])
+        else:
+            return torch.hstack([torch.tensor(args[1]),args[0]])
+    elif not torch.is_tensor(args[0]) and torch.is_tensor(args[1]):
+        if format in ['append','conj']:
+            try:
+                return torch.hstack(args[0] + [args[1]])
+            except:
+                return args[0] + [args[1]]
+        else:
+            try:
+                return torch.hstack([args[1]] + args[0])
+            except:
+                return [args[1]] + args[0]
+        
+        
+non_grad_distributions = {
+    'normal': Normal,
+    'uniform': Uniform,
+    'bernoulli': Bernoulli,
+    'exponential': Exponential,
+    'beta' : Beta,
+    'discrete' : Discrete,
+    'dirichlet' : Dirichlet,
+    'gamma' : Gamma,
+    'flip' : Bernoulli,
+    'dirac' : Dirac,
+    'uniform-continuous' : Uniform
+}
+
+
+
+primitives = {
+    # Elementary Functions
+    '+': lambda args: args[0] + args[1],
+    '-': lambda args: args[0] - args[1],
+    '*': lambda args: args[0] * args[1],
+    '/': lambda args: args[0] / args[1],
+    '**': lambda args: args[0] ** args[1],
+    'sqrt': lambda args: args[0] ** 0.5,
+    'log': lambda args: torch.log(args[0]),
+    'exp': lambda args: torch.exp(args[0]),
+    'abs': lambda args: torch.abs(args[0]),
     
-    #the function .Parameters() returns a list of parameters that you can pass to an optimizer
-    optimizer = torch.optim.Adam(dg.Parameters(), lr=1e-2)
+    # Matrix Functions
+    'mat-mul' : lambda args: torch.matmul(args[0],args[1]),
+    'mat-add' : lambda args: torch.add(args[0],args[1]),
+    'mat-tanh' : lambda args: torch.tanh(args[0]),
+    'mat-relu' : lambda args: torch.ReLU(args[0]),
+    'mat-transpose' : lambda args: args[0].T,
+    'mat-repmat' : lambda args: args[0].repeat((args[1].long(),args[2].long())),
     
-    #do the optimization. Here we're maximizing the log_prob of some data at 2.0
-    #the scale should move to 2.0 as well,
-    #furthermore, the scale should be constrained to the positive reals,
-    #this last thing is taken care of by the new distributions defined above
-    for i in range(1000):
-        nlp = -dg.log_prob(data)
-        nlp.backward()
-        optimizer.step()
-        optimizer.zero_grad()
+    # Logic Operators
+    '=': lambda args: torch.tensor(float(args[0] == args[1])),
+    '<=': lambda args: torch.tensor(float(args[0] <= args[1])),
+    '>= ': lambda args: torch.tensor(float(args[0] >= args[1])),
+    '<': lambda args: torch.tensor(float(args[0] < args[1])),
+    '>': lambda args: torch.tensor(float(args[0] > args[1])),
+    'and': lambda args: torch.tensor(float(args[0] and args[1])),
+    'or': lambda args: torch.tensor(float(args[0] or args[1])),
     
-    #check the result is correct:
-    print(dg.Parameters())
-    
-    
-    #note: Parameters() returns a list of tensors that parametrize the distributions
-    # gradients can be taken with respect to these parameters, and you can assume gradient updates are "safe"
-    # i.e., under the hood, parameters constrained to the positive reals are transformed so that they can be optimized
-    # over without worrying about the constraints
-    
+    # Data Structure Operations
+    'vector' : lambda args: vector(args),
+    'first' : lambda args: args[0][0],
+    'peek' : lambda args: args[0][0],
+    'second' : lambda args: args[0][1],
+    'rest' : lambda args: args[0][1:],
+    'last' : lambda args: args[0][-1],
+    'nth' : lambda args: args[0][args[1]],
+    'append': lambda args: combine('append', args),
+    'conj' : lambda args: combine('conj', args),
+    'cons' : lambda args: combine('cons', args),
+    'hash-map' : lambda args: hash_map(args),
+    'get' : lambda args : get(args),
+    'put': lambda args : put(args),
+    'empty?': lambda args : len(args[0]) == 0
+}
+
+
+env = {
+    **primitives,
+    'push-address' : push_addr,
+    **non_grad_distributions
+}
+
+
+
+
+
+

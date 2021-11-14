@@ -3,7 +3,7 @@ import torch
 import numpy as np
 from tests import is_tol, run_prob_test,load_truth
 from primitives import primitives
-from distributions import vi_distributions
+from distributions import distributions
 from tqdm import tqdm
 import matplotlib.pyplot as plt
 from torchviz import make_dot
@@ -36,7 +36,6 @@ def evaluate_program(ast, sigma = {}, l = {}, rho = {}):
     return EVAL(ast[0], sigma, l, rho)
 
 def EVAL(e, sigma, l, rho):
-#    print(e)
     if type(e) != list or len(e) == 1:
         if type(e) == list:
             e = e[0]
@@ -48,8 +47,8 @@ def EVAL(e, sigma, l, rho):
             return e, sigma
         elif e in primitives.keys():
             return primitives[e], sigma
-        elif e in vi_distributions.keys():
-            return vi_distributions[e], sigma
+        elif e in distributions.keys():
+            return distributions[e], sigma
         elif e in l.keys():
             return l[e], sigma
         elif e in rho.keys():
@@ -94,7 +93,7 @@ def EVAL(e, sigma, l, rho):
         if c[0] in rho.keys():
             return rho[c[0]](c[1:]), sigma
         else:
-            if c[0] in vi_distributions.values():
+            if c[0] in distributions.values():
                 return c[0](*c[1:]), sigma
             else:
                 return c[0](c[1:]), sigma
